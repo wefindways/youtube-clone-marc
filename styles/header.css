@@ -1,0 +1,203 @@
+.header{
+  height: 56px;
+  display: flex;
+  padding: 0 16px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: white;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(228, 228, 228);
+}
+.left-section{
+  width: 150px;
+  display: flex;
+  align-items: center;
+}
+.hamburger-menu{
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+  margin-right: 10px;
+  padding: 5px;
+  cursor: pointer;
+}
+.hamburger-menu:hover{
+  background-color: rgb(235, 235, 235);
+}
+.youtube-logo{
+  height: 20px;
+  cursor: pointer;
+}
+.middle-section{
+  flex: 1;
+  margin-left: 70px;
+  max-width: 500px;
+  display: flex;
+}
+.right-section{
+  min-width: 225px;
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  flex-shrink: 0;
+}
+.second-right-section{
+  display: flex;
+  align-items: center;
+}
+.search-bar{
+  display: flex;
+  flex: 1;
+  width: 0px;
+  border: 1px solid rgb(192, 192, 192);
+  padding-left: 15px;
+  padding-right: 12px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-right: none;
+  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.15);
+}
+.search-bar::placeholder{
+  font-size: 16px;
+}
+.fa-magnifying-glass{
+  font-size: 20px;
+}
+.fa-microphone{
+  font-size: 20px;
+}
+.search-button{
+  height: 40px;
+  width: 64px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border: 1px solid rgb(192, 192, 192);
+  background-color: rgb(245, 245, 245);
+  cursor: pointer;
+  transition: 0.15s, color 0.15s; 
+}
+.search-button, 
+.microphone-button,
+.video-plus-button,
+.notification-bell-button{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-button .tooltip, 
+.microphone-button .tooltip,
+.video-plus-button .tooltip,
+.notification-bell-button .tooltip{
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.516);
+  color: white;
+  padding: 6px 8px;
+  border-radius: 3px;
+  font-size: 12px;
+  bottom: -37px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+.search-button:hover .tooltip, 
+.microphone-button:hover .tooltip,
+.video-plus-button:hover .tooltip,
+.notification-bell-button:hover .tooltip{
+  opacity: 1;
+}
+.search-button:hover{
+  background-color: rgb(227, 227, 227);
+  border-color: rgb(192, 192, 192);
+}
+.search-button:active{
+  color: white;
+  background-color: rgba(134, 134, 134, 0.648);
+}
+.microphone-button{
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  background-color: transparent;
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: 0.15s, color 0.15s;
+}
+.microphone-button:hover{
+  background-color: rgb(245, 245, 245);
+  border-color: rgb(192, 192, 192);
+}
+.microphone-button:active{
+  color: white;
+  background-color: rgba(134, 134, 134, 0.648);
+}
+.bx-video-plus{
+  font-size: 28px;
+}
+.video-plus-button{
+  height: 40px;
+  width: 40px;
+  padding-top: 3px;
+  border-radius: 20px;
+  border: none;
+  margin-right: 8px;
+  background-color: white;
+  cursor: pointer;
+  transition: 0.15s, color 0.15s;
+}
+.video-plus-button:hover{
+  background-color: rgb(245, 245, 245);
+}
+.video-plus-button:active{
+  background-color: rgba(134, 134, 134, 0.648);
+  color: white;
+}
+.fa-bell{
+  font-size: 24px;
+}
+.notification-bell-button{
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  border: none;
+  margin-right: 8px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.15s, color 0.15s;
+  position: relative;
+}
+.notif-pending{
+  background-color: rgb(209, 14, 14);
+  color: white;
+  font-size: 12px;
+  padding: 1px 5px;
+  border-radius: 8px;
+  position: absolute;
+  top: 6px;
+  right: 2px;
+}
+.notification-bell-button:hover{
+  background-color: rgb(245, 245, 245);
+}
+.notification-bell-button:active{
+  background-color: rgba(134, 134, 134, 0.648);
+  color: white
+}
+.my-profile-pic{
+  height: 35px;
+  width: 35px;
+  border-radius: 20px;
+  object-fit: cover;
+  object-position: center;
+  cursor: pointer;
+  margin: 0 10px;
+}
